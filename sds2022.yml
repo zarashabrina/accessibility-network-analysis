@@ -1,0 +1,94 @@
+# OVERVIEW
+# This YAML script will attempt to install a Python virtual environment able to
+# support the requirements of all three of King's College London's 'Spatial Data Science'
+# pathway in the BA/BSc Geography programme.
+#
+# INSTALLATION
+# Note that, in the example commands below, you will need to replace {name} by the name
+# value specified as a configuration parameter below (the first line that does *not*
+# start with a hash (#). All the commands below should be run from the Terminal.
+#
+# If you've already installed this environment before:
+#   conda remove --name {name} --all
+#
+# To install/reinstall the environment:
+#   conda env create -f sds2022.yml
+#
+# To activate the environment:
+#   conda activate sds2022
+#
+# CONFIGURATION PARAMETERS
+name: sds2022
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9.12
+  - pip
+  - basemap=1.2.2
+  - bokeh=2.4.3
+  - cartopy=0.20.0
+  - colorama=0.4.4
+  - contextily=1.2.0
+  - cython=0.29.30
+  - dask=2022.5.0
+  - dask-ml=2022.1.22
+  - datashader=0.14.0
+  - dill=0.3.5.1
+  - earthpy=0.9.4
+  - folium=0.12.1.post1
+  - gdal=3.3.2
+  - geopandas=0.10.2
+  - geopy=2.2.0
+  - georasters=0.5.23
+  - geos=3.9.1
+  - gitdb2=4.0.2
+  - gitpython=3.1.27
+  - googlemaps=2.5.1
+  - hdbscan=0.8.28
+  - ipykernel=6.13.0
+  - ipyleaflet=0.16.0
+  - ipyparallel=8.4.1
+  - ipywidgets=7.7.0
+  - joblib=1.1.0
+  - jupyterlab=3.4.5
+  - libspatialite=5.0.1
+  - lxml=4.8.0
+  - mapclassify=2.4.3
+  - mgwr=2.1.2
+  - mkl-service=2.4.0
+  - mplleaflet=0.0.5
+  - mysql-connector-python=8.0.29
+  - nbdime=3.1.1
+  - networkx=2.8.5
+  - nodejs=14.18.3
+  - osmnx=1.2.0
+  - palettable=3.3.0
+  - pandana=0.6.1
+  - pillow=9.1.1
+  - plotly=5.8.0
+  - pointpats=2.2.0
+  - polyline=1.4.0
+  - pykrige=1.6.1
+  - pysal=2.7.0
+  - pyshp=2.3.1
+  - rasterio=1.2.8
+  - rasterstats=0.16.0
+  - requests=2.27.1
+  - scikit-learn=1.1.1
+  - scikit-image=0.19.2
+  - seaborn=0.11.2
+  - simplejson=3.17.6
+  - six=1.16.0
+  - smmap2=3.0.1
+  - sqlite=3.38.3
+  - sqlalchemy=1.4.36
+  - statsmodels=0.13.2
+  - tzlocal=4.2
+  - urbanaccess=0.2.2
+  - xlrd=2.0.1
+  - xlsxwriter=3.0.3
+  - pip:
+    - feather-format==0.4.1
+    - geojson==2.5.0
+    - pyarrow==9.0.0
+    - smopy==0.0.8
